@@ -8,12 +8,11 @@ set(OpenPose_VERSION ${OpenPose_VERSION_MAJOR}.${OpenPose_VERSION_MINOR}.${OpenP
 set(CMAKE_MACOSX_RPATH 1)
 
 
+### setup caffe paths
 set(BUILD_CAFFE 0)
 set(Caffe_INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include/caffe)
-#set(Caffe_INCLUDE_DIRS /home/alex/catkin_ws/devel/include/caffe)
 set(Caffe_LIBS ${CATKIN_DEVEL_PREFIX}/lib)
-#set(Caffe_LIBS /home/alex/catkin_ws/devel/lib)
-#set(Caffe_FOUND 1)
+
 
 ### CMAKE HEADERS
 # Ubuntu 18 default. After 3.8, no need for find_CUDA
